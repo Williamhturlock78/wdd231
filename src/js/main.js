@@ -26,10 +26,18 @@ function mediaCardTemplate(info) {
     `;
 }
 
-function setParkInfo() {
+function setParkInfo(data) {
 
+}
+
+function setParkInfo(data) {
+
+}
+
+function setParkFooter(data){
+    
 }
 
 setHeaderInfo();
 mediaCardTemplate();
-setParkInfo();
+setParkInfo(data);
