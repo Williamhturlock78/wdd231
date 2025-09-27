@@ -34,7 +34,7 @@ function setParkFooter(data){
 
 }
 
-setHeaderInfo();
-mediaCardTemplate();
+setHeaderInfo(data);
+mediaCardTemplate(data);
 setParkInfo(data);
 setParkFooter(data);
