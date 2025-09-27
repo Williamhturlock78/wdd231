@@ -27,5 +27,9 @@ function mediaCardTemplate(info) {
 }
 
 function setParkInfo() {
-    
+
 }
+
+setHeaderInfo();
+mediaCardTemplate();
+setParkInfo();
