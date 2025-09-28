@@ -171,3 +171,25 @@ svg {
   background-color: var(--bs-black);
   fill: white;
 }
+
+
+.hero-banner{
+  position: relative;
+  height: 300px
+}
+
+.hero-banner_content{
+  position: absolute;
+}
+
+.hero-banner_title{
+  color: white;
+  size: 100px;
+
+}
+
+.hero-banner_subtitle{
+  color:white;
+  size: 90 px;
+
+}
