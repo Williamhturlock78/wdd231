@@ -176,7 +176,7 @@ svg {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: darkslategrey;
+  background-color: gray;
   color: white;
   padding: 10px 20px;
 }
