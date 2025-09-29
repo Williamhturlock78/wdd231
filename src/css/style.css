@@ -193,3 +193,12 @@ svg {
   size: 90 px;
 
 }
+
+.global-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: darkslategrey;
+  color: white;
+  padding: 10px 20px;
+}
