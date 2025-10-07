@@ -34,6 +34,39 @@ function setParkFooter(data){
 
 }
 
+async function init() {
+  const parkData = await getParkData();
+  console.log(parkData); // ✅ Check that data is coming through
+
+  // Later:
+  // setHeaderFooter(parkData);
+  // setParkIntro(parkData);
+  // setParkInfoLinks(parkData);
+
+}
+
+async function getClimbingParks() {
+  const url = 'https://developer.nps.gov/api/v1/activities/parks?q=climbing&api_key=0ybv11ZcMr6McY80ecu4uhdNhNLWb7yS2UeSkakd';
+  
+  const response = await fetch(url);
+  const data = await response.json();
+  
+  return data;
+}
+
+const outputList = document.getElementById('outputList');
+
+async function renderClimbingList(){
+  const data= await getClimbingParks();
+  const parks= data.data[0].parks;
+  const html= parks.map(listTemplate).join('');
+  outputList.innerHTML= html;
+}
+
+init();
+
+getClimbingParks();
+renderClimbingList();
 setHeaderInfo(data);
 mediaCardTemplate(data);
 setParkInfo(data);
