@@ -272,3 +272,19 @@ svg {
   width: 24px;
   height: 24px;
 }
+
+.global-nav-toggle{
+visibility: hidden;
+}
+
+.global-nav:hover ~ .global-nav-toggle{
+  visibility: visible;
+}
+
+.global-nav{
+  visibility: visible;
+}
+
+.global-nav:hover{
+  visibility: hidden;
+}
