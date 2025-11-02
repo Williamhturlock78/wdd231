@@ -274,17 +274,17 @@ svg {
 }
 
 .global-nav-toggle{
-visibility: hidden;
+height: 0;
 }
 
 .global-nav:hover ~ .global-nav-toggle{
-  visibility: visible;
+  height: 20px;
 }
 
 .global-nav{
-  visibility: visible;
+  height: 20px;
 }
 
 .global-nav:hover{
-  visibility: hidden;
+  height: 0;
 }
