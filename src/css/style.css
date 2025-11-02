@@ -304,3 +304,35 @@ height: 0;
   align-items: center;
 } */
 
+
+.global-nav button {
+  background-color: transparent;
+  border: 0;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.global-nav svg {
+  --icon-color: white;
+}
+
+.global-nav__toggle--closed {
+  display: flex;
+  align-items: center;
+}
+.global-nav__toggle--open {
+  display: none;
+  align-items: center;
+}
+
+.global-nav__toggle[aria-expanded="true"] .global-nav__toggle--closed {
+  display: none;
+}
+.global-nav__toggle[aria-expanded="true"] .global-nav__toggle--open {
+  display: flex;
+}
+
+.global-nav.show {
+  max-height: 1000px;
+}
+
