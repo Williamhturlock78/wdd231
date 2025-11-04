@@ -17,6 +17,11 @@ function openModal(e) {
     const alt= img.getAttribute("alt");
 
     const full= src.replace("small", "full");
+
+    modalImage.src= full;
+    modalImage.alt= alt;
+    
+    modal.showModal();
     
 // Code to show modal  - Use event parameter 'e'   
     
